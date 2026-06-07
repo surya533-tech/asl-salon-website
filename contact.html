@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ASL Salon & Spa. Book an appointment, find our location, or reach out with any questions.">
+    <title>Contact Us | ASL Salon & Spa</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="assets/logo.PNG" alt="ASL Salon Logo" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <a href="index.html" class="logo-text">ASL Salon & Spa</a>
+                    <span class="logo-tagline">Your Satisfaction is our Goal!</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#testimonials">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="https://www.vagaro.com/aslsalonandspa" class="btn-primary nav-btn" target="_blank" rel="noopener noreferrer">Book on Vagaro <i class="fas fa-external-link-alt" style="margin-left: 5px;"></i></a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="services-hero-overlay"></div>
+        <div class="container text-center reveal" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Get in Touch</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--text-light);">We'd love to hear from you. Fill out the form below or drop by the salon.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel reveal">
+                    <h2>Salon Information</h2>
+                    <p class="contact-intro">Looking for a fresh cut, vibrant color, or a relaxing facial? Our doors are open and we are ready to serve you.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>1927 S Hurstbourne Pkwy<br>Louisville, KY 40220</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:502-678-2220">(502) 678-2220</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:aslsalon433@gmail.com">aslsalon433@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-hours-box">
+                        <h3><i class="far fa-clock"></i> Store Hours</h3>
+                        <ul class="hours-list-detailed">
+                            <li><span>Monday</span> <span class="closed">Closed</span></li>
+                            <li><span>Tuesday</span> <span>9:00 AM - 7:00 PM</span></li>
+                            <li><span>Wednesday</span> <span>9:00 AM - 7:00 PM</span></li>
+                            <li><span>Thursday</span> <span>9:00 AM - 7:00 PM</span></li>
+                            <li><span>Friday</span> <span>9:00 AM - 7:00 PM</span></li>
+                            <li><span>Saturday</span> <span>9:00 AM - 6:00 PM</span></li>
+                            <li><span>Sunday</span> <span>10:00 AM - 6:00 PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container reveal" style="transition-delay: 100ms;">
+                    <h2>Send a Message</h2>
+                    <!-- Using formsubmit.co to route emails to aslsalon433@gmail.com -->
+                    <form action="https://formsubmit.co/aslsalon433@gmail.com" method="POST" class="contact-form">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from ASL Salon Website!">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Interested Service (Optional)</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="Haircut">Haircut</option>
+                                <option value="Coloring/Highlights">Coloring & Highlights</option>
+                                <option value="Hair Treatment">Hair Treatment</option>
+                                <option value="Waxing/Threading">Waxing & Threading</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <!-- Map Full Width -->
+            <div class="map-container reveal" style="margin-top: 50px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.618036987747!2d-85.5804369!3d38.2187741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869a23999999999%3A0x8888888888888888!2s1927%20S%20Hurstbourne%20Pkwy%2C%20Louisville%2C%20KY%2040220!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 12px; box-shadow: var(--shadow);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Location -->
+                <div class="footer-col reveal">
+                    <h3>Find Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1927 S Hurstbourne Pkwy<br>Louisville, KY 40220</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:502-678-2220">(502) 678-2220</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:aslsalon433@gmail.com">aslsalon433@gmail.com</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Hours -->
+                <div class="footer-col reveal" style="transition-delay: 100ms;">
+                    <h3>Store Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday</span> <span>Closed</span></li>
+                        <li><span>Tue - Fri</span> <span>9:00 AM - 7:00 PM</span></li>
+                        <li><span>Saturday</span> <span>9:00 AM - 6:00 PM</span></li>
+                        <li><span>Sunday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col reveal" style="transition-delay: 200ms;">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="index.html">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="services.html">Services & Pricing</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about.html">About Us</a></li>
+                        <li style="margin-bottom: 10px;"><a href="https://www.vagaro.com/aslsalonandspa" target="_blank">Book Appointment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ASL Salon & Spa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
